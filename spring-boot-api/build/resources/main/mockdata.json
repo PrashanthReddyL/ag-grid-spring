@@ -1,0 +1,28 @@
+{
+  "airline": [
+    {
+      "id": 2,
+      "name": "Singapore Airlines",
+      "country": "Singapore",
+      "established": "1947"
+    },
+    {
+      "id": 4,
+      "name": "Emirates",
+      "country": "Dubai",
+      "established": "1985"
+    },
+    {
+      "id": 3,
+      "name": "Cathay Pacific",
+      "country": "Hong Kong",
+      "established": "1946"
+    },
+    {
+      "id": 6,
+      "name": "Qantas",
+      "country": "Austrailia",
+      "established": "1920"
+    }
+  ]
+}
