@@ -1,0 +1,495 @@
+{
+   "version":{
+      "edition":"enterprise",
+      "api":"v2",
+      "schema":80
+   },
+   "error":false,
+   "message":"",
+   "results":[
+      {
+         "@@FinalEdgeSet_10":[
+            {
+               "e_type":"WITH_LINES",
+               "from_id":"214304643531",
+               "from_type":"Claim",
+               "to_id":"2143046435311",
+               "to_type":"ClaimLine",
+               "directed":true,
+               "attributes":{
+                  "source":"",
+                  "updateTS":"1970-01-01 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "@@FinalEdgeSet_11":[
+            {
+               "e_type":"WITH_DIAGNOSIS",
+               "from_id":"214304643531",
+               "from_type":"Claim",
+               "to_id":"ABK:E538",
+               "to_type":"DiagnosisCode",
+               "directed":true,
+               "attributes":{
+                  
+               }
+            }
+         ]
+      },
+      {
+         "@@FinalEdgeSet_12":[
+            {
+               "e_type":"WITH_ICD_CD",
+               "from_id":"214304643531",
+               "from_type":"Claim",
+               "to_id":"G0463",
+               "to_type":"ICDProcedureCode",
+               "directed":true,
+               "attributes":{
+                  
+               }
+            }
+         ]
+      },
+      {
+         "@@FinalEdgeSet_13":[
+            {
+               "e_type":"WITH_SUBSCRIBER",
+               "from_id":"214304643531",
+               "from_type":"Claim",
+               "to_id":"09664993011",
+               "to_type":"Subscriber",
+               "directed":true,
+               "attributes":{
+                  
+               }
+            }
+         ]
+      },
+      {
+         "@@FinalEdgeSet_14":[
+            {
+               "e_type":"WITH_BILL_TYPE",
+               "from_id":"214304643531",
+               "from_type":"Claim",
+               "to_id":"131",
+               "to_type":"BillType",
+               "directed":true,
+               "attributes":{
+                  
+               }
+            }
+         ]
+      },
+      {
+         "@@FinalEdgeSet_15":[
+            {
+               "e_type":"With_State",
+               "from_id":"09664993011",
+               "from_type":"Subscriber",
+               "to_id":"CA",
+               "to_type":"StateCode",
+               "directed":true,
+               "attributes":{
+                  
+               }
+            }
+         ]
+      },
+      {
+         "@@FinalEdgeSet_16":[
+            {
+               "e_type":"With_Age",
+               "from_id":"09664993011",
+               "from_type":"Subscriber",
+               "to_id":"83",
+               "to_type":"AgeCode",
+               "directed":true,
+               "attributes":{
+                  
+               }
+            }
+         ]
+      },
+      {
+         "VertexSet_1":[
+            {
+               "v_id":"214304643531",
+               "v_type":"Claim",
+               "attributes":{
+                  "dateOfServiceStart":"2022-04-26 00:00:00",
+                  "dateOfServiceEnd":"2022-04-26 00:00:00",
+                  "totalClaimchargedAmount":345.39,
+                  "admissionDate":"1970-01-01 00:00:00",
+                  "claimTypeCode":"I",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00",
+                  "TypeOfBill":"131"
+               }
+            }
+         ]
+      },
+      {
+         "VertexSet_2":[
+            {
+               "v_id":"2143046435311",
+               "v_type":"ClaimLine",
+               "attributes":{
+                  "lineChargedAmount":0,
+                  "approvedAmount":56.37,
+                  "memberResponsibilityAmount":45,
+                  "paidAmount":45.1,
+                  "copayAmount":0,
+                  "deductibleAmount":0,
+                  "processedDate":"2022-05-27 00:00:00",
+                  "paidDate":"2022-04-26 00:00:00",
+                  "serviceStartDate":"2022-04-26 00:00:00",
+                  "serviceEndDate":"1970-01-01 00:00:00",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00",
+                  "processedTime":"2022-05-27 00:00:00",
+                  "transCd":"CH",
+                  "ClaimLineNumber":"1"
+               }
+            }
+         ]
+      },
+      {
+         "VertexSet_8":[
+            {
+               "v_id":"ABK:E538",
+               "v_type":"DiagnosisCode",
+               "attributes":{
+                  "applicableGender":"F",
+                  "diagnosisCodeType":"",
+                  "diagnosisCodeVersion":"10",
+                  "diagnosisCodeDescription":"",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "VertexSet_7":[
+            {
+               "v_id":"G0463",
+               "v_type":"ICDProcedureCode",
+               "attributes":{
+                  "procedureCodeVersion":"10",
+                  "procedureCodeDescription":"",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "VertexSet_4":[
+            {
+               "v_id":"09664993011",
+               "v_type":"Subscriber",
+               "attributes":{
+                  "identifierType":"MemberID",
+                  "firstName":"LINCARE INC",
+                  "lastName":"SPENCER",
+                  "middleName":"LINCARE INC",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "VertexSet_3":[
+            {
+               "v_id":"131",
+               "v_type":"BillType",
+               "attributes":{
+                  "billTypeDescription":"",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "VertexSet_5":[
+            {
+               "v_id":"CA",
+               "v_type":"StateCode",
+               "attributes":{
+                  "stateCodeDescription":"",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "VertexSet_6":[
+            {
+               "v_id":"83",
+               "v_type":"AgeCode",
+               "attributes":{
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1":[
+            {
+               "alias_schema_1":"214304643531",
+               "alias_schema_2":"2143046435311",
+               "alias_schema_3":"131",
+               "alias_schema_4":"09664993011",
+               "alias_schema_5":"CA",
+               "alias_schema_6":"83",
+               "alias_schema_7":"G0463",
+               "alias_schema_8":"ABK:E538",
+               "alias_schema_9":"1013981554",
+               "alias_schema_10":{
+                  "e_type":"WITH_LINES",
+                  "from_id":"214304643531",
+                  "from_type":"Claim",
+                  "to_id":"2143046435311",
+                  "to_type":"ClaimLine",
+                  "directed":true,
+                  "attributes":{
+                     "source":"",
+                     "updateTS":"1970-01-01 00:00:00"
+                  }
+               },
+               "alias_schema_11":{
+                  "e_type":"WITH_DIAGNOSIS",
+                  "from_id":"214304643531",
+                  "from_type":"Claim",
+                  "to_id":"ABK:E538",
+                  "to_type":"DiagnosisCode",
+                  "directed":true,
+                  "attributes":{
+                     
+                  }
+               },
+               "alias_schema_12":{
+                  "e_type":"WITH_ICD_CD",
+                  "from_id":"214304643531",
+                  "from_type":"Claim",
+                  "to_id":"G0463",
+                  "to_type":"ICDProcedureCode",
+                  "directed":true,
+                  "attributes":{
+                     
+                  }
+               },
+               "alias_schema_13":{
+                  "e_type":"WITH_SUBSCRIBER",
+                  "from_id":"214304643531",
+                  "from_type":"Claim",
+                  "to_id":"09664993011",
+                  "to_type":"Subscriber",
+                  "directed":true,
+                  "attributes":{
+                     
+                  }
+               },
+               "alias_schema_14":{
+                  "e_type":"WITH_BILL_TYPE",
+                  "from_id":"214304643531",
+                  "from_type":"Claim",
+                  "to_id":"131",
+                  "to_type":"BillType",
+                  "directed":true,
+                  "attributes":{
+                     
+                  }
+               },
+               "alias_schema_15":{
+                  "e_type":"With_State",
+                  "from_id":"09664993011",
+                  "from_type":"Subscriber",
+                  "to_id":"CA",
+                  "to_type":"StateCode",
+                  "directed":true,
+                  "attributes":{
+                     
+                  }
+               },
+               "alias_schema_16":{
+                  "e_type":"With_Age",
+                  "from_id":"09664993011",
+                  "from_type":"Subscriber",
+                  "to_id":"83",
+                  "to_type":"AgeCode",
+                  "directed":true,
+                  "attributes":{
+                     
+                  }
+               },
+               "alias_schema_17":{
+                  "e_type":"With_NPI",
+                  "from_id":"2143046435311",
+                  "from_type":"ClaimLine",
+                  "to_id":"1013981554",
+                  "to_type":"Provider",
+                  "directed":true,
+                  "attributes":{
+                     
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_1":[
+            {
+               "v_id":"214304643531",
+               "v_type":"Claim",
+               "attributes":{
+                  "dateOfServiceStart":"2022-04-26 00:00:00",
+                  "dateOfServiceEnd":"2022-04-26 00:00:00",
+                  "totalClaimchargedAmount":345.39,
+                  "admissionDate":"1970-01-01 00:00:00",
+                  "claimTypeCode":"I",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00",
+                  "TypeOfBill":"131"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_2":[
+            {
+               "v_id":"2143046435311",
+               "v_type":"ClaimLine",
+               "attributes":{
+                  "lineChargedAmount":0,
+                  "approvedAmount":56.37,
+                  "memberResponsibilityAmount":45,
+                  "paidAmount":45.1,
+                  "copayAmount":0,
+                  "deductibleAmount":0,
+                  "processedDate":"2022-05-27 00:00:00",
+                  "paidDate":"2022-04-26 00:00:00",
+                  "serviceStartDate":"2022-04-26 00:00:00",
+                  "serviceEndDate":"1970-01-01 00:00:00",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00",
+                  "processedTime":"2022-05-27 00:00:00",
+                  "transCd":"CH",
+                  "ClaimLineNumber":"1"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_3":[
+            {
+               "v_id":"131",
+               "v_type":"BillType",
+               "attributes":{
+                  "billTypeDescription":"",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_4":[
+            {
+               "v_id":"09664993011",
+               "v_type":"Subscriber",
+               "attributes":{
+                  "identifierType":"MemberID",
+                  "firstName":"LINCARE INC",
+                  "lastName":"SPENCER",
+                  "middleName":"LINCARE INC",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_5":[
+            {
+               "v_id":"CA",
+               "v_type":"StateCode",
+               "attributes":{
+                  "stateCodeDescription":"",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_6":[
+            {
+               "v_id":"83",
+               "v_type":"AgeCode",
+               "attributes":{
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_7":[
+            {
+               "v_id":"G0463",
+               "v_type":"ICDProcedureCode",
+               "attributes":{
+                  "procedureCodeVersion":"10",
+                  "procedureCodeDescription":"",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_8":[
+            {
+               "v_id":"ABK:E538",
+               "v_type":"DiagnosisCode",
+               "attributes":{
+                  "applicableGender":"F",
+                  "diagnosisCodeType":"",
+                  "diagnosisCodeVersion":"10",
+                  "diagnosisCodeDescription":"",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      },
+      {
+         "pattern_view_1_alias_schema_9":[
+            {
+               "v_id":"1013981554",
+               "v_type":"Provider",
+               "attributes":{
+                  "firstName":"FELDMAN, LEON A",
+                  "lastName":"STURM",
+                  "middleName":"FELDMAN, LEON A",
+                  "enumerationDate":"1970-01-01 00:00:00",
+                  "deactivationReason":"",
+                  "deactivationDate":"1970-01-01 00:00:00",
+                  "organizationName":"EISENHOWER HEALTH",
+                  "dateOfBirth":"1970-08-14 02:58:39",
+                  "source":"EDP",
+                  "updateTS":"2023-01-06 00:00:00"
+               }
+            }
+         ]
+      }
+   ]
+}
